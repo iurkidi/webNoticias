@@ -1,0 +1,4 @@
+services:
+#    uni_web_noticias.example:
+#        class: Uni\Bundle\webNoticiasBundle\Example
+#        arguments: [@service_id, "plain_value", %parameter%]

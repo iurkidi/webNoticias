@@ -1,0 +1,18 @@
+{% extends 'uniWebNoticiasBundle::layout.html.twig' %}
+
+{% block central %}
+    
+<h1>NOTICIA {{titulo}}</h1>
+
+<h2>{{texto}}</h2>
+
+<h3>{{autor}}</h3>
+    
+<br><br><br><br>
+    <img src="{{ asset('bundles/uniwebnoticias/img/'~ foto  ~ '') }}" />
+<br><br><br><br>
+        <a href="{{
+                   path('uni_web_noticias_inicio' )
+                   }}"> Volver atras</a>
+
+{% endblock %}

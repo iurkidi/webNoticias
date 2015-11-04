@@ -1,0 +1,33 @@
+{% extends '::base.html.twig' %}
+
+
+ {% block cuerpo %}
+ 
+        <div id="menuSup">
+            {% block menuSup %}
+                
+             <ul id="menu-horizontal">
+                <li><a href="#" title="Texto">Texto1</a></li>
+                <li><a href="#" title="Texto">Texto2</a></li>
+                <li><a href="#" title="Texto">Texto3</a>
+                    <ul>
+                        <li><a href="#" title="Texto">Texto31</a></li>
+                        <li><a href="#" title="Texto">Texto32</a></li>
+                    </ul>
+                </li>
+                <li><a href="#" title="Texto">Texto4</a></li>
+                <li><a href="#" title="Texto">Texto5</a></li>
+             </ul>
+             
+            {% endblock %}
+        </div>
+ 
+        
+        <div id="central">
+            {% block central %}
+            Central
+            {% endblock %}
+        </div>
+ 
+ 
+ {% endblock %}

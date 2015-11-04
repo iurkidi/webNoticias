@@ -1,0 +1,4 @@
+uni_web_noticias:
+    resource: "@uniWebNoticiasBundle/Resources/config/routing.yml"
+    prefix:   /
+
