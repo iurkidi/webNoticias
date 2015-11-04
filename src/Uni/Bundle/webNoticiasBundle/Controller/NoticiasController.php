@@ -8,6 +8,7 @@ class NoticiasController extends Controller
 {    
     public function mostrarNoticiaAction($titulo,$texto,$autor,$foto)
     {
+        ////*************************        
         //Simulacion el acceso a BBDD
         ////*************************             
         return $this->render('uniWebNoticiasBundle:contenidos:noticia.html.twig'
