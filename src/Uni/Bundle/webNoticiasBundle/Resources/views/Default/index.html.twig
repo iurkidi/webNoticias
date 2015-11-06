@@ -1,1 +1,38 @@
-Hello {{ name }}!
+{% extends 'uniWebNoticiasBundle::layout.html.twig' %}
+
+{% block central %}
+    
+   <br><br>
+        <h1>ESTA ES LA HOME DE LA WEB DE NOTICIAS</h1>
+        <h2>ESTA EN EL BLOQUE CUERPO</h2>
+        
+        <br><br>
+     <div id="LineaFormulario">
+        <table>
+    
+            {%for unafila in tabla%}
+
+                <tr>
+                    <td>
+                        <a href="{{path('uni_web_noticias_not',{'titulo': unafila.titulo,'texto': unafila.texto,'autor':unafila.autor,'foto': unafila.foto} )}}">
+                            {{ unafila.titulo }}
+                        </a>
+                    </td>
+                    <td>{{ unafila.texto }}</td>
+                    <td>{{ unafila.autor }}</td>
+                    <td><img src="{{ asset('bundles/uniwebnoticias/img/'~ unafila.foto  ~ '') }}" /></td>
+                </tr>
+
+            {%endfor%}
+    
+        </table>
+    </div>   
+    
+    <br><br>
+    <div id="LineaFormulario">   
+        <a href="{{path('uni_web_noticias_about')}}">
+            Pagina ABOUT
+        </a>
+    </div>
+
+{% endblock %}

@@ -1,11 +1,7 @@
 uni_web_noticias_homepage:
-    path:     /hello/{name}
+    path:     /
     defaults: { _controller: uniWebNoticiasBundle:Default:index }
     
-uni_web_noticias_inicio:
-    path:     /home
-    defaults: { _controller: uniWebNoticiasBundle:Default:home }
-
 uni_web_noticias_not:
     path:     /contenidos/{titulo}/{texto}/{autor}/{foto}
     defaults: { _controller: uniWebNoticiasBundle:Noticias:mostrarNoticia }
