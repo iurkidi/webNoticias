@@ -6,12 +6,8 @@ use Symfony\Bundle\FrameworkBundle\Controller\Controller;
 
 class DefaultController extends Controller
 {
-    public function indexAction($name)
-    {
-        return $this->render('uniWebNoticiasBundle:Default:index.html.twig', array('name' => $name));
-    }
-    
-    public function homeAction()
+       
+    public function indexAction()
     {
         
         //Simulacion el acceso a BBDD
