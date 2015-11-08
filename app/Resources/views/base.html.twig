@@ -11,23 +11,23 @@
     </head>
     <body>
         
+        
         <div id="cabecera">
             {% block cabecera %}
-                <h1 class="letralogo textocentrado centrado"> WEB NOTICIAS </h1>
+                <h1 class="letralogo textocentrado"> Hau da MARKA! </h1>  
             {% endblock %}
         </div>
-       
+        
         <div id="contenFormularios">
-            
-            <div id="cuerpo">
-            {% block cuerpo %}Cuerpo{% endblock %}
-            </div>
-        
+            {% block cuerpo %}
+                Cuerpo
+            {% endblock %} 
         </div>
-        
-         <div id="pie">
+                        
+        <div id="pie">
             {% block pie %}
-                <p class="derecha separarDcha20">2015/2016</p>
+                <p class="izquierda separarIzq15 negrita">2015/2016</p>
+                <p class="derecha separarDcha20 negrita">Itziar Urkidi</p>
             {% endblock %}
         </div>
        
