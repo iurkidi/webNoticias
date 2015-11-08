@@ -1,18 +1,31 @@
 {% extends 'uniWebNoticiasBundle::layout.html.twig' %}
 
 {% block central %}
+ 
     
-<h1>NOTICIA {{titulo}}</h1>
-
-<h2>{{texto}}</h2>
-
-<h3>{{autor}}</h3>
+<div class="LineaFormulario"></div>
     
-<br><br><br><br>
-    <img src="{{ asset('bundles/uniwebnoticias/img/'~ foto  ~ '') }}" />
-<br><br><br><br>
-        <a href="{{
-                   path('uni_web_noticias_homepage' )
-                   }}"> Volver atras</a>
+<h1 class="centrado">{{titulo}}</h1>
+
+<div class="LineaFormulario"></div>
+
+<div class="LineaFormulario centrado">
+    <img src="{{ asset('bundles/uniwebnoticias/img/'~ foto  ~ '') }}" width="25%" heigth="25%"/>
+</div>
+
+<div class="LineaFormulario">
+    <h3 class="izquierda separarIzq20">{{autor}}</h3>
+</div>
+
+
+<div class="LineaFormulario">
+    <p>{{texto}}</p>
+</div>
+
+
+<div class="LineaFormulario"></div>
+<div class="LineaFormulario"></div>
+        
+<a href="{{path('uni_web_noticias_homepage' )}}"> Volver atras</a>
 
 {% endblock %}

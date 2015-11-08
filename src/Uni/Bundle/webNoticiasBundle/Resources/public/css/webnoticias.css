@@ -1,16 +1,13 @@
 /* HOJA ESTILOS PRACTICA*/
 
-
-/* 
-	R E S E T
-*/
+/* R E S E T*/
 	
 ol, ul{
-	list-style: none;
+    list-style: none;
 }
 
 a img{
-	border:none; 
+    border:none; 
 } 
 
 
@@ -22,79 +19,76 @@ html,body{
    text-align: center;
    width: 100%; 
    height: 100%;
+   /*scroll: no;*/
 }
 
 body{	
-	width: 100%;
-	margin:0;
-	padding: 0;
-	/*clear: both;*/
-	background-color: #F2F2F2;
-	color: #000000;
-	font-family: "Trebuchet MS", Tahoma, Arial, sans-serif;
-	font-size: 10pt;
-	font-weight: normal;
-	border-color: #000000;
+    width: 100%;
+    margin: 0;
+    padding: 0;
+    /*background-color: #F2F2F2;*/
+    background-color:#8C1B17;
+    color: #000000;
+    font-family: "Trebuchet MS", Tahoma, Arial, sans-serif;
+    font-size: 10pt;
+    font-weight: normal;
+    border-color: #000000;
 }
 
 #cabecera{	
-	margin:0;
-	padding: 0;
-	width: 100%;
-	position: relative;
-	height: 15%;
-	overflow: auto;
-	display: block;
-	background-color: #000000;
-	color: #FFFFFF;
+    position: relative;	
+    margin:0;
+    padding: 0;
+    width: 100%;
+    height: 15%;
+    overflow: auto;
+    display: block;
+    background-color: #FFFFFF;
+    color: #D21300;
 }
 
 #pie{	
-	margin:0;
-        /*margin-right:20px;*/
-        margin-bottom:20px;
-	padding: 0;
-	width: 100%;
-	position: relative;
-	height: 5%;
-	overflow: auto;
-	display: block;
-	background-color: #000000;
-	color: #FFFFFF;
-        float:right;
+    position: relative;	
+    margin:0;
+    padding: 0;
+    width: 100%;	
+    height: 7%;
+    overflow: auto;
+    display: block;
+    background-color: #FFFFFF;
+    color: #D21300;
 }
 
 #contenFormularios{
-	padding: 0px;
-	margin: 0px;
-	position: relative;
-	/*clear: both;
-	float: left;*/
-	width: 100%;
-	height: 82%;
-	background-color: #F2F2F2;	
+    position: relative;
+    padding: 0;
+    margin: 0;    
+    width: 100%;
+    /*height: 78%;*/
+    overflow: auto;
+    display: block;
+    background-color: #9F9F9F;
 }
 
-#cuerpo{
-	position: relative;
-	background-color: #FFFFFF;
-	/*float:left;*/
-	width: 100%;
-	height: 100%;
-}
+
 
 /* ESTILOS MENU
 ******************/
 #menuSup{	
     margin:0;
-    padding: 0;
-    width: 100%;
+    padding: 0;    
     position: relative;
+    width: 100%;
     /*height: 5%;*/
-    /*overflow: auto;*/
+    overflow: auto;
     display: block;
-    background-color: #000000;
+    background-color: #930D00;
     color: #FFFFFF;
+}
+
+#menu-horizontal {
+    /*width:100%;*/
+    margin:0 350px;
 }
 
 ul#menu-horizontal li {
@@ -104,104 +98,131 @@ ul#menu-horizontal li {
 }
 
 ul#menu-horizontal ul {
-display: none;
-position: relative;
-top: 24;
-left:0;
-margin:0;
-padding:0;
-background:#FFFFFF;
+    display: none;
+    position: relative;
+    top: 24;
+    left:0;
+    margin:0;
+    padding:0;
+    background:#FFFFFF;
 }
 
 ul#menu-horizontal ul li {
-display: block !important;
+    display: block !important;
+    /*z-index: 0;*/
 }
 
 ul#menu-horizontal li:hover ul{
-display: none;
+    display: none;
 }
 
 ul#menu-horizontal li:hover ul{
-display: block;
-}
-
-#menu-horizontal {
-width:100%;
-margin:0 auto;
+    display: block;
+    /*z-index: 0;*/
 }
 
 #menu-horizontal li {
-margin:0 1px;
-width:98px;
-min-height:19px;
-text-align:center;
-background:#BBBBBB;
-list-style:none;
-padding:2px 0;
+    margin:0 1px;
+    width:98px;
+    min-height:19px;
+    text-align:center;
+    background:#D21300;
+    list-style:none;
+    padding:2px 0;
 }
 
 #menu-horizontal li:hover {
-background:#C5014F;
+    background:#BBBBBB;
 }
 
 #menu-horizontal li a {
-font:bold 11px Arial, Helvetica, sans-serif;
-color:#FFF;
-text-decoration:none;
+    font:bold 11px Arial, Helvetica, sans-serif;
+    color:#FFF;
+    text-decoration:none;
 }
 
 #menu-horizontal li ul li{
-float:none;
-width:98px;
-margin:1px 0;
+    float:none;
+    width:98px;
+    margin:1px 0;
 }
 
 /* FIN ESTILOS MENU
 ******************/
 
-h1, h2, h3, h5, h5, h6{
-    font-weight:bold;
-    font-family: Georgia, Times, "Times New Roman", serif;
+/* COLUMNAS*/
+.colesqizq{
+    background-color: #136825;
+    position: relative;
+    float:left;
+    width: 25%;
+    height: 100%;
+    overflow: auto;
+    display: block;
 }
 
-a:link, a:visited{
-    color: #000; 
-    text-decoration: underline; 
+.colcentr{
+    position: relative;
+    float:left;
+    width: 50%;
+    height: 100%;
+    overflow: auto;
+    display: block;
+    background-color: #08C;
 }
 
-a:hover{
-     color: #f4A774;
+.colesqdcha{
+    background-color: #136825;
+    position: relative;
+    float:left;
+    clear:right;
+    width: 25%;
+    height: 100%;
+     overflow: auto;
+    display: block;
 }
 
-a:active{
-     color: #000;
-     text-decoration: underline; 
+.col1{
+    background-color: #08C;
+    position: relative;
+    float:left;
+    width: 25%;
+    height: 100%;
+    overflow: auto;
+    display: block;
 }
 
-label {
-	font-family: Verdana, Arial, Helvetica, sans-serif;
-	font-size: 8pt;
-	font-weight: normal;
-	color: #333333;
-	text-decoration: none;
-	text-align: left;
-	background-color: #F2F2F2;
-	margin: 0px 0px 0px 5px;
-	padding: 0px;
-	height: 15px;
-	width: 140px;
-	clear: none;
-	float: left;
+.col2{
+    background-color: #136825;
+    position: relative;
+    float:left;
+    clear:right;
+    width: 25%;
+    height: 100%;
+    overflow: auto;
+    display: block;
 }
-
-/*ul{text-align: left;}
-
-ul li {	font-size: 18px; padding: 5px 0; }
-	ul li a {width: 120px; background: url(../img/flecha_enlace.png) no-repeat 10px center; padding-left: 25px; }
-	ul li a.desplegable{background: url(../img/flecha_desplegable.png) no-repeat 10px center; }	
-	ul li li{font-size: 14px; padding-left: 15px;}
-	ul li a.desplegable li a{background: url(../img/flecha_subenlace.png) no-repeat 10px center; }*/
-
+.col3{
+    background-color: #136825;
+    position: relative;
+    float:left;
+    width: 25%;
+    height: 100%;
+    overflow: auto;
+    display: block;
+    clear: both;
+} 
+.col4{
+    background-color: #08C;
+    position: relative;
+    float:left;
+    clear:right;
+    width: 25%;
+    height: 100%;
+     overflow: auto;
+    display: block;
+}
+/* FIN COLUMNAS*/
 
 /* ESTILOS ANCHOS Y ALTOS */
 
@@ -210,153 +231,114 @@ ul li {	font-size: 18px; padding: 5px 0; }
 .ancho70por{ width: 70%;}
 
 .alto10por{ height: 10%;}
+.alto100por{ height: 100%;}
 
+/* RESTO */
+h1, h2, h3, h5, h5, h6{
+    font-weight:bold;
+    font-family: Georgia, Times, "Times New Roman", serif;
+    color:#930D00;
+}
 
-/* DESPUES DE LOS ALTOS Y ANCHOS EL RESTO*/
+a:link, a:visited{
+    color: #000; 
+    text-decoration: underline; 
+}
 
-.bordesmapa{	
-	border-top: 2px solid;
-	border-left: 2px solid;
-	border-bottom: 2px solid;
-	border-right: 2px solid;
-	border-color: #000000;
+a:hover{
+    color: #D21300;
+}
+
+a:active{
+    color: #000;
+    text-decoration: underline; 
+}
+
+label {
+    font-family: Verdana, Arial, Helvetica, sans-serif;
+    font-size: 8pt;
+    font-weight: normal;
+    color: #333333;
+    text-decoration: none;
+    text-align: left;
+    background-color: #F2F2F2;
+    margin: 0px 0px 0px 5px;
+    padding: 0px;
+    height: 15px;
+    width: 140px;
+    clear: none;
+    float: left;
 }
 
 .centrado{
-	align: center;
-}
-
-.contcol1{
-	position: relative;
-	width: 30%;
-	height: 100%;
-	float: left;
-	/*border-top: 1px solid;
-	border-left: 1px solid;
-	border-bottom: 1px solid;
-	border-right: 1px solid;
-	border-color: #000FFF;*/
-}
-
-.col1{
-	position: relative;
-	width: 100%;
-	height: 100%;
-	float: left;
-	border-top: 2px solid;
-	border-left: 2px solid;
-	border-bottom: 2px solid;
-	border-right: 2px solid;
-	border-color: #000000;
-}
-
-.col2{
-	position: relative;
-	width: 65%;
-	height: 100%;
-	float: left;
-	/*clear: right;*/
-	/*border-top: 1px solid;
-	border-left: 1px solid;
-	border-bottom: 1px solid;
-	border-right: 1px solid;
-	border-color: #FFFF00;*/
-}
-
-.contcolumnas{
-	position: relative;
-	clear: right;
-	width: 100%;
-	/*border-top: 1px solid;
-	border-left: 1px solid;
-	border-bottom: 1px solid;
-	border-right: 1px solid;
-	border-color: #000000;*/
+    align: center;
 }
 
 .cursiva{
-	font-style: italic;
+    font-style: italic;
 }
 
 .derecha{
-	float:right;
+    float:right;
 }
-
-.fondoblanco{
-	background-color: #FFFFFF;
-	color: #000000;
-}
-
-.fondoverde{
-	background-color: #136825;
-	color: #FFFFFF;
-}
-
-.imagencentral{
-	width:100px;
-	height:100px;
-}
-
 .izquierda{
-	float:left;
+    float:left;
 }
 
 .letralogo{
-	FONT-FAMILY: Comic Sans, Comic Sans MS, cursive !important;
-	/* font-style: italic !important;
-	Verdana, Geneva, Arial, , sans-serif;*/
+    font-family: Times New Roman !important;
+    font-weight:bold;
+    font-size: 30pt;
 }
 
 .LineaFormulario{
-	margin: 2px 0px;
-	padding: 0px;
-	clear: both;
-	float: left;
-	width: 98%;
-	border: 0px none;	
+    margin: 2px 0px;
+    padding: 0px;
+    clear: both;
+    float: left;
+    width: 98%;
+    border: 0px none;	
 }
 
-
 .LineaFormulario div{
-	float:left;
-	clear:none;	
+    float:left;
+    clear:none;	
 }
 
 .LineaFormulario p{
-	color:#000000;
-	/*font-size:10px;*/
-	font-weight:bold;
-	text-align: justify;
-	margin:1.5em 0em 0.3em 0.3em;
+    color:#000000;
+    font-size:15px;
+    text-align: justify;
+    margin:0.5em 1.5em 0.3em 1.5em;
 }
 
 
 .listasindisco{
-	list-style-type:none;
+    list-style-type:none;
 }
 
 .listadisco{
-	list-style-type:disc;
+    list-style-type:disc;
 }
 
 .negrita{
-	font-weight: bold;
+    font-weight: bold;
 }
 
 .textoblanco{
-	color: #FFFFFF;
+    color: #FFFFFF;
 }
 
 .textocentrado{
-	text-align: center;	
+    text-align: center;	
 }
 
 .textoizq{
-	text-align: left;	
+    text-align: left;	
 }
 
 .textojustificado{
-	text-align: justify;
+    text-align: justify;
 }
 
 .separarAbajo15{margin-bottom:15px;}
@@ -372,4 +354,3 @@ ul li {	font-size: 18px; padding: 5px 0; }
 .separarIzq200{margin-left:200px;}
 .separarIzq250{margin-left:250px;}
 .separarIzq350{margin-left:400px;}
-
