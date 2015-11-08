@@ -3,23 +3,64 @@
 {% block central %}
     
 
-    {#<div class="colesqizq"> <div> 
-    <div class="colcentr">#}
- 
-    {%for unafila in tabla%} 
-      
-     <div class="col#{unafila}">
-                                 
-         <h1><a href="{{path('uni_web_noticias_not',{'titulo': unafila.titulo,'texto': unafila.texto,'autor':unafila.autor,'foto': unafila.foto} )}}">
+    {#{%for unafila in tabla%}       
+     <div class="col#{unafila}">                                 
+         <h2><a href="{{path('uni_web_noticias_not',{'titulo': unafila.titulo,'texto': unafila.texto,'autor':unafila.autor,'foto': unafila.foto} )}}">
                     {{ unafila.titulo }}
-             </a></h1>
-            <br>
-            <img src="{{ asset('bundles/uniwebnoticias/img/'~ unafila.foto  ~ '') }}" width='10%' heigth='10%'/>    
-           <br> {{ unafila.texto | truncate (100)}}           
+             </a></h2>
+            <p> {{ unafila.texto | truncate (100)}}  </p>
+            <br> <img src="{{ asset('bundles/uniwebnoticias/img/'~ unafila.foto  ~ '') }}"/>                       
     </div>
-    {%endfor%}
+    {%endfor%}#}
+         
+    <div class="col1">
+                         
+            <h2><a href="{{path('uni_web_noticias_not',{'titulo': tabla[0].titulo,'texto': tabla[0].texto,'autor':tabla[0].autor,'foto': tabla[0].foto} )}}">
+                    {{ tabla[0].titulo }}
+                </a></h2>                         
+           <p> {{ tabla[0].texto | truncate (100)}}  </p> 
+           <br>
+            <img src="{{ asset('bundles/uniwebnoticias/img/'~ tabla[0].foto  ~ '') }}" />
+        </div>
+        
+        <div class="col2">
+                         
+                <h2><a href="{{path('uni_web_noticias_not',{'titulo': tabla[1].titulo,'texto': tabla[1].texto,'autor':tabla[1].autor,'foto': tabla[1].foto} )}}">
+                    {{ tabla[1].titulo }}
+                </a></h2>                
+                    <p>{{ tabla[1].texto| truncate (100) }} </p>
+                <br>
+                 <img src="{{ asset('bundles/uniwebnoticias/img/'~ tabla[1].foto  ~ '') }}"/>               
+                    
+                    <div class="LineaFormulario"></div>
+                    <div class="LineaFormulario"></div>
+                    <div class="LineaFormulario"></div>
+                    <div class="LineaFormulario"></div>
+                    <div class="LineaFormulario"></div>                                                           
+                    
+        </div>
+        <div class="col3">
+                         
+                <h2><a href="{{path('uni_web_noticias_not',{'titulo': tabla[2].titulo,'texto': tabla[2].texto,'autor':tabla[2].autor,'foto': tabla[2].foto} )}}">
+                    {{ tabla[2].titulo }}
+                </a></h2>       
+            <p> {{ tabla[2].texto| truncate (100) }}  </p>
+           <br>
+            <img src="{{ asset('bundles/uniwebnoticias/img/'~ tabla[2].foto  ~ '') }}"/>
             
-   {# </div>#}
-            
-    {#<div class="colesqdcha"> <div>#}
+        </div>
+        <div class="col4">
+                         
+                <h2><a href="{{path('uni_web_noticias_not',{'titulo': tabla[3].titulo,'texto': tabla[3].texto,'autor':tabla[3].autor,'foto': tabla[3].foto} )}}">
+                    {{ tabla[3].titulo }}
+                </a></h2>   
+                <br>
+            <p>{{ tabla[2].texto | truncate (100)}}</p>   
+           <br>
+            <img src="{{ asset('bundles/uniwebnoticias/img/'~ tabla[3].foto  ~ '') }}" height=90%/>
+            <br><br><br><br>
+            <div class="LineaFormulario"></div>
+            <div class="LineaFormulario"></div>
+        </div>
+    
 {% endblock %}
