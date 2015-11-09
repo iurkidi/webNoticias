@@ -162,37 +162,6 @@ ul#menu-horizontal li:hover ul{
 ******************/
 
 /* COLUMNAS*/
-.colesqizq{
-    background-color: #136825;
-    position: relative;
-    float:left;
-    width: 25%;
-    height: 100%;
-    overflow: auto;
-    display: block;
-}
-
-.colcentr{
-    position: relative;
-    float:left;
-    width: 50%;
-    height: 100%;
-    overflow: auto;
-    display: block;
-    background-color: #08C;
-}
-
-.colesqdcha{
-    background-color: #136825;
-    position: relative;
-    float:left;
-    clear:right;
-    width: 25%;
-    height: 100%;
-     overflow: auto;
-    display: block;
-}
-
 .col1{
     background-color: #F2F2F2;
     position: relative;
@@ -238,6 +207,20 @@ ul#menu-horizontal li:hover ul{
     overflow: auto;
     display: block;
     margin-right: 250px;
+    margin-bottom: 0;
+    padding: 0;
+}
+
+.detalleNot{
+    background-color: #F2F2F2;
+    position: relative;
+    /*float:left;
+    clear:right;*/
+    width: 50%;
+    height: 100%;
+    overflow: auto;
+    display: block;
+    margin-left: 350px;
     margin-bottom: 0;
     padding: 0;
 }
