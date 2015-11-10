@@ -8,14 +8,29 @@
          <h2><a href="{{path('uni_web_noticias_not',{'titulo': unafila.titulo,'texto': unafila.texto,'autor':unafila.autor,'foto': unafila.foto} )}}">
                     {{ unafila.titulo }}
              </a></h2>
+             {% if loop.index == "4" %}
+                 <br>
+              {%endif%}
             <p> {{ unafila.texto | truncate (100)}}  </p>
-            <br> <img src="{{ asset('bundles/uniwebnoticias/img/'~ unafila.foto  ~ '') }}"/>  
-            {% if loop.index == 1 %}
-             <div class="LineaFormulario"></div>
+            <br> <img src="{{ asset('bundles/uniwebnoticias/img/'~ unafila.foto  ~ '') }}"/>             
+            {% if loop.index == "2" %}
+                    <div class="LineaFormulario"></div>
                     <div class="LineaFormulario"></div>
                     <div class="LineaFormulario"></div>
                     <div class="LineaFormulario"></div>
                     <div class="LineaFormulario"></div> 
+            {% elseif loop.index == "4" %}
+                <br><br>
+                    <div class="LineaFormulario"></div>
+                    <div class="LineaFormulario"></div>
+                    <div class="LineaFormulario"></div>
+                    <div class="LineaFormulario"></div>
+                    <div class="LineaFormulario"></div>
+                    <div class="LineaFormulario"></div>
+                    <div class="LineaFormulario"></div>                   
+                    <div class="LineaFormulario"></div>
+                    <div class="LineaFormulario"></div>
+                    <div class="LineaFormulario"></div>
             {%endif%}
     </div>
     {%endfor%}
