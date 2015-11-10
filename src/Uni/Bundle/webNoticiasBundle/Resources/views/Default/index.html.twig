@@ -3,17 +3,24 @@
 {% block central %}
     
 
-  {#  {%for unafila in tabla%}       
-     <div class="{{'col'~ unafila}}">                                 
+    {%for unafila in tabla%}       
+     <div class="{{'col'~ loop.index}}">                                 
          <h2><a href="{{path('uni_web_noticias_not',{'titulo': unafila.titulo,'texto': unafila.texto,'autor':unafila.autor,'foto': unafila.foto} )}}">
                     {{ unafila.titulo }}
              </a></h2>
             <p> {{ unafila.texto | truncate (100)}}  </p>
-            <br> <img src="{{ asset('bundles/uniwebnoticias/img/'~ unafila.foto  ~ '') }}"/>                       
+            <br> <img src="{{ asset('bundles/uniwebnoticias/img/'~ unafila.foto  ~ '') }}"/>  
+            {% if loop.index == 1 %}
+             <div class="LineaFormulario"></div>
+                    <div class="LineaFormulario"></div>
+                    <div class="LineaFormulario"></div>
+                    <div class="LineaFormulario"></div>
+                    <div class="LineaFormulario"></div> 
+            {%endif%}
     </div>
-    {%endfor%}#}
+    {%endfor%}
          
-    <div class="col1">
+    {#<div class="col1">
                          
             <h2><a href="{{path('uni_web_noticias_not',{'titulo': tabla[0].titulo,'texto': tabla[0].texto,'autor':tabla[0].autor,'foto': tabla[0].foto} )}}">
                     {{ tabla[0].titulo }}
@@ -36,7 +43,7 @@
                     <div class="LineaFormulario"></div>
                     <div class="LineaFormulario"></div>
                     <div class="LineaFormulario"></div>
-                    <div class="LineaFormulario"></div>                                                           
+                    <div class="LineaFormulario"></div>                      
                     
         </div>
         <div class="col3">
@@ -58,9 +65,10 @@
             <p>{{ tabla[3].texto | truncate (100)}}</p>   
            <br>
             <img src="{{ asset('bundles/uniwebnoticias/img/'~ tabla[3].foto  ~ '') }}" height=90%/>
-            <br><br><br><br>
+            <br><br>
             <div class="LineaFormulario"></div>
             <div class="LineaFormulario"></div>
-        </div>
+             <div class="LineaFormulario"></div>
+        </div>#}
     
 {% endblock %}
